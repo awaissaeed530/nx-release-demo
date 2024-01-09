@@ -4,6 +4,8 @@
   "github": true,
   "repositoryUrl": "git@github.com:awaissaeed530/nx-release-demo.git",
   "branches": [
-    "main"
+    { "name": "main" },
+    { "name": "development", "channel": "dev", "prerelease": "dev" },
+    { "name": "beta", "channel": "beta", "prerelease": "beta" }
   ]
 }
