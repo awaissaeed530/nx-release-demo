@@ -1,11 +1,16 @@
 {
   "changelog": true,
   "npm": false,
+  "git": true,
   "github": true,
   "repositoryUrl": "git@github.com:awaissaeed530/nx-release-demo.git",
   "branches": [
     { "name": "main" },
     { "name": "development", "channel": "dev", "prerelease": "dev" },
     { "name": "beta", "channel": "beta", "prerelease": "beta" }
-  ]
+  ],
+  "githubOptions": {
+    "addReleases": "bottom",
+    "addChannel": true
+  }
 }
