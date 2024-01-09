@@ -76,7 +76,7 @@
         "jestConfig": "apps/admin/web/jest.config.ts"
       }
     },
-    "semantic-release": {
+    "release": {
       "executor": "@theunderscorer/nx-semantic-release:semantic-release"
     }
   }

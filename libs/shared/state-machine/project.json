@@ -26,6 +26,9 @@
       "options": {
         "reportsDirectory": "../../../coverage/libs/shared/state-machine"
       }
+    },
+    "release": {
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release"
     }
   },
   "tags": []
