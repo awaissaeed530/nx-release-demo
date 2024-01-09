@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/awaissaeed530/nx-release-demo/compare/admin-web-v1.0.0...admin-web-v1.1.0) (2024-01-09)
+
+
+### Bug Fixes
+
+* state machine method correctly returns message ([7e3ccae](https://github.com/awaissaeed530/nx-release-demo/commit/7e3ccae70a6af3ac3d383ce421f4ec0fc23a8de4))
+
+
+### Features
+
+* **admin-shell:** create state machine for absolutely no reason ([88a17ec](https://github.com/awaissaeed530/nx-release-demo/commit/88a17ec8f7c796a76011b45e60b8378f3f3a1789))
+
 # [1.1.0-beta.1](https://github.com/awaissaeed530/nx-release-demo/compare/admin-web-v1.0.0...admin-web-v1.1.0-beta.1) (2024-01-09)
 
 
