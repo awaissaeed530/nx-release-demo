@@ -1,1 +1,1 @@
-export * from './lib/admin-core.component';
+export * from './lib/core.module';

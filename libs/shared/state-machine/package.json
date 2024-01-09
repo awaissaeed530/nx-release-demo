@@ -1,7 +1,7 @@
 {
-  "name": "@workspace/shared/state-machine",
+  "name": "@awaissaeed530/state-machine",
   "version": "0.0.1",
   "dependencies": {},
   "type": "commonjs",
-  "main": "./index.cjs"
+  "main": "./index.js"
 }

@@ -2,7 +2,7 @@
   "name": "admin-layout",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/admin/layout/src",
-  "prefix": "release-demo",
+  "prefix": "app",
   "tags": [],
   "projectType": "library",
   "targets": {

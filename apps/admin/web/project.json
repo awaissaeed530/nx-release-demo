@@ -2,7 +2,7 @@
   "name": "admin-web",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "release-demo",
+  "prefix": "app",
   "sourceRoot": "apps/admin/web/src",
   "tags": [],
   "targets": {

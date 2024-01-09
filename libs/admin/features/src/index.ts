@@ -1,1 +1,1 @@
-export * from './lib/admin-features.component';
+export * from './lib/features.module';

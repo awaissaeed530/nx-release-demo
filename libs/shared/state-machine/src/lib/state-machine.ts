@@ -1,3 +1,3 @@
-export function stateMachine(): string {
-  return 'state-machine';
+export function createStateMachine(): void {
+  console.log('State machine has been created');
 }

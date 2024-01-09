@@ -2,7 +2,7 @@
   "name": "common-ui",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/common/ui/src",
-  "prefix": "release-demo",
+  "prefix": "app",
   "tags": [],
   "projectType": "library",
   "targets": {

@@ -2,7 +2,7 @@
   "name": "kitchen-shell",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/kitchen/shell/src",
-  "prefix": "release-demo",
+  "prefix": "app",
   "tags": [],
   "projectType": "library",
   "targets": {

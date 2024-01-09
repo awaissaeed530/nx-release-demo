@@ -2,7 +2,7 @@
   "name": "kitchen-kds-web",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "release-demo",
+  "prefix": "app",
   "sourceRoot": "apps/kitchen/kds/web/src",
   "tags": [],
   "targets": {

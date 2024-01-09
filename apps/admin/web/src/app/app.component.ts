@@ -1,15 +1,7 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
 
 @Component({
-  standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: 'release-demo-root',
-  template: `<release-demo-nx-welcome></release-demo-nx-welcome>
-    <router-outlet></router-outlet>`,
-  styles: ``,
+  selector: 'app-root',
+  template: `<app-admin-shell></app-admin-shell>`,
 })
-export class AppComponent {
-  title = 'admin-web';
-}
+export class AppComponent {}
