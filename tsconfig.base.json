@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@workspace/admin/core": ["libs/admin/core/src/index.ts"],
+      "@workspace/admin/features": ["libs/admin/features/src/index.ts"],
+      "@workspace/admin/layout": ["libs/admin/layout/src/index.ts"],
+      "@workspace/admin/shell": ["libs/admin/shell/src/index.ts"],
+      "@workspace/common/ui": ["libs/common/ui/src/index.ts"],
+      "@workspace/kitchen/shell": ["libs/kitchen/shell/src/index.ts"],
+      "@workspace/shared/state-machine": [
+        "libs/shared/state-machine/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

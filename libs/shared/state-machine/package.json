@@ -1,0 +1,7 @@
+{
+  "name": "@workspace/shared/state-machine",
+  "version": "0.0.1",
+  "dependencies": {},
+  "type": "commonjs",
+  "main": "./index.cjs"
+}
