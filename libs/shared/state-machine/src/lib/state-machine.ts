@@ -1,3 +1,5 @@
-export function createStateMachine(): void {
-  console.log('State machine has been created');
+export function createStateMachine(): string {
+  const message = 'State machine has been created';
+  console.log(message);
+  return message;
 }
