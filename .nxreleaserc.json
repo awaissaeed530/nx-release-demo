@@ -1,0 +1,9 @@
+{
+  "changelog": true,
+  "npm": false,
+  "github": true,
+  "repositoryUrl": "git@github.com:awaissaeed530/nx-release-demo.git",
+  "branches": [
+    "main"
+  ]
+}
