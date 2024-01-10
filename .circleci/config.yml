@@ -50,7 +50,7 @@ jobs:
       - run:
           name: Prepare Release
           command: |
-            pnpm nx run-many --target=release --parallel=false
+            pnpm nx run-many --target=release --parallel=false --verbose
       - run:
           name: Publish Release
           command: |
