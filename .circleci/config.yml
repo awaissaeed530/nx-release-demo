@@ -80,14 +80,16 @@ jobs:
 workflows:
   deploy:
     jobs:
+      - setup_node
       - setup_agents:
           matrix:
             parameters:
               ordinal: [1, 2, 3]
-      - setup_node
-      - build:
           requires:
             - setup_node
+      - build:
+          requires:
+            - setup_agents
       - release:
           requires:
             - build
