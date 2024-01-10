@@ -23,5 +23,6 @@ export default defineConfig({
       reportsDirectory: '../../../coverage/libs/shared/state-machine',
       provider: 'v8',
     },
+    passWithNoTests: true,
   },
 });
