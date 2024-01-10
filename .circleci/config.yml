@@ -72,7 +72,8 @@ jobs:
       ordinal:
         type: integer
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/project
       - run:
           command: npx nx-cloud start-agent
           no_output_timeout: 15m
