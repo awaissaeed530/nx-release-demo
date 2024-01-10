@@ -38,15 +38,14 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/project
-      - run: npx nx-cloud start-ci-run --stop-agents-after=build
       - run:
           name: Run Tests
           command: |
-            npx nx-cloud record -- npx nx affected --target=test --parallel=2 --base=$NX_BASE --head=$NX_HEAD
+            pnpm nx affected --target=test --parallel=2 --base=$NX_BASE --head=$NX_HEAD
       - run:
           name: Prepare Build
           command: |
-            npx nx-cloud record -- npx nx affected --target=build --parallel=2 --base=$NX_BASE --head=$NX_HEAD
+            pnpm nx affected --target=build --parallel=2 --base=$NX_BASE --head=$NX_HEAD
   release:
     resource_class: small
     docker:
@@ -60,37 +59,19 @@ jobs:
       - run:
           name: Prepare Release
           command: |
-            npx nx-cloud record -- npx nx affected --target=release --parallel=false --base=$NX_BASE --head=$NX_HEAD
+            pnpm nx affected --target=release --parallel=false --base=$NX_BASE --head=$NX_HEAD
       - run:
           name: Publish Release
           command: |
-            npx nx-cloud record -- npx nx affected --target=release-publish --parallel=2 --base=$NX_BASE --head=$NX_HEAD
-  setup_agents:
-    docker:
-      - image: cimg/node:18.19.0
-    parameters:
-      ordinal:
-        type: integer
-    steps:
-      - attach_workspace:
-          at: ~/project
-      - run:
-          command: npx nx-cloud start-agent
-          no_output_timeout: 15m
+            pnpm nx affected --target=release-publish --parallel=2 --base=$NX_BASE --head=$NX_HEAD
 
 workflows:
   deploy:
     jobs:
       - setup_node
-      - setup_agents:
-          matrix:
-            parameters:
-              ordinal: [1, 2, 3]
-          requires:
-            - setup_node
       - build:
           requires:
-            - setup_agents
+            - setup_node
       - release:
           requires:
             - build
