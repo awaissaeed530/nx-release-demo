@@ -48,6 +48,9 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run:
+          name: Fix hosts unknown for Github
+          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run:
           name: Prepare Release
           command: |
             pnpm nx run-many --target=release --parallel=false --verbose
