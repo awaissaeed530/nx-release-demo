@@ -1,6 +1,7 @@
 version: 2.1
 jobs:
   setup_node:
+    resource_class: small
     docker:
       - image: cimg/node:18.19.0
     steps:
@@ -28,6 +29,7 @@ jobs:
           paths:
             - .
   build:
+    resource_class: medium
     docker:
       - image: cimg/node:18.19.0
     steps:
@@ -42,6 +44,7 @@ jobs:
           command: |
             pnpm nx run-many --target=build
   release:
+    resource_class: small
     docker:
       - image: cimg/node:18.19.0
     steps:
